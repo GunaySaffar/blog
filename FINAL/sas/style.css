@@ -22,7 +22,7 @@ body {
   font-family: "Raleway", sans-serif;
 }
 #result * {
-  transition: all 0.2s ease;
+  transition: all 0.5s ease;
 }
 #result .myDiv {
   position: relative;
@@ -56,9 +56,64 @@ body {
 }
 #result .blog-img {
   margin-bottom: 30px;
+  position: relative;
+}
+#result .polosa {
+  width: 2400px;
+}
+#result .blog-img:hover {
+  transition: all .5s ease;
+}
+#result .btn-left {
+  transition: all 0.5s ease;
+  left: 0px;
+  display: block;
+}
+#result .btn-right {
+  right: -30px;
 }
 #result .slidImg img {
   display: inline-block;
+}
+#result .myBtn {
+  width: 100%;
+}
+#result .btn-left {
+  display: none;
+  left: -30px;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: 115px;
+  border-top: 50px solid transparent;
+  border-left: 60px solid green;
+  border-bottom: 50px solid transparent;
+}
+#result .btn-right {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  right: -90px;
+  top: 115px;
+  border-top: 50px solid transparent;
+  border-right: 60px solid green;
+  border-bottom: 50px solid transparent;
+}
+#result .btn-right:hover {
+  right: -30px;
+}
+#result .btns {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  height: 10px;
+  width: 10px;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid  white;
+  background-color: red;
+  margin-right: 10px;
 }
 #result .blog-body {
   margin-bottom: 30px;

@@ -1,6 +1,6 @@
 #result{
 	*{ 
-		transition: all 0.2s ease;
+		transition: all 0.5s ease;
 		
 	}
 	font-family: "Raleway", sans-serif;
@@ -40,10 +40,68 @@
 	//====================================
 	.blog-img{
 		margin-bottom: 30px;
+		position:relative;
 	}
+	.polosa{
+	width:2400px;
+	}
+	.blog-img:hover{
+	transition:all .5s ease;
+	}
+	.btn-left{
+	transition: all 0.5s ease;
+	left:0px;
+	display:block;
+	}
+	.btn-right{
+	right:-30px;
+	}
+	
 	.slidImg img{
 		display: inline-block;
 	}
+	.myBtn{
+	width:100%;
+	}
+	.btn-left{
+	display:none;
+	left:-30px;
+	width:0px;
+	height:0px;
+	position:absolute;
+	top:115px;
+	border-top:50px solid transparent;
+	border-left:60px solid green;
+	border-bottom:50px solid transparent;
+	}
+	
+	.btn-right{
+	width:0px;
+	height:0px;
+	position:absolute;
+	right:-90px;
+	top:115px;
+	border-top:50px solid transparent;
+	border-right:60px solid green;
+	border-bottom:50px solid transparent;
+	}
+	.btn-right:hover{
+	right:-30px;
+	}
+	.btns{
+	position:absolute;
+	top:200px;
+	left:200px;
+	height:10px;
+	width:10px;
+	padding:0;
+	cursor:pointer;
+	border-radius: 50%;
+	border: 2px solid  white;
+	background-color: red;
+	margin-right: 10px;
+	}
+
 	//=====================================
 	.blog-body{
 		margin-bottom: 30px;
